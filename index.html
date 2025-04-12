@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Grupo ALCE</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style-tabs.css">
+</head>
+<body>
+    <div>
+        <header>
+            <div class="contenedor">
+                <div class="top-bar">
+                    <div class="contact-info">
+                        <span><a href="tel:+123456789"><i class="fa-solid fa-phone"></i> +123456789</a></span>
+                        <span><a href="mailto:ejemplo@email.com"><i class="fa-solid fa-envelope"></i> ejemplo@email.com</a></span>
+                    </div>
+                    <div class="social-media">   
+                        <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="logo"><a href="https://www.grupoalce.com/" target="_blank"><img src="./img/logos/logo-alce-azul.png" alt="Grupo Alce Formación Logo"></a></div>
+                <nav>
+                    <ul>
+                        <li><a href="#carrusel">Inicio</a></li>
+                        <li><a href="#cursos">Cursos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero color-fondo">
+                <!-- <img src="./img/banner.png" alt="">  -->
+        
+                    <h1>Bienvenido a Grupo Alce Formación</h1>
+                    <h3>Más de 25 años dedicados a la formación en Málaga</h3>
+                
+            </section>
+
+
+            <!-- Sección cursos. Muestra todos los cursos -->
+            <section class="container-main curso color-fondo">
+                <div class="curso-titulo contenedor">
+                    <h2>¿Buscas nuevas salidas laborales?</h2>
+                    <h3>Prepara tu futuro con nuestros cursos gratuitos de Formación Profesional para el Empleo (FPE)</h3>
+                </div>
+                <!-- <p>Descubre nuestros cursos y mejora tus habilidades</p> -->
+                <div id="cursos" class="contenedor course-container tab-buttons">
+                    <div>
+                        <img src="./img/cursos/desarrollo-aplicaciones-flutter.jpg" alt="Curso de Desarrollo de Aplicaciones Móviles" data-tab="tab1">
+                        <div>
+                            <h2>Curso de Desarrollo de Aplicaciones Móviles para iOS y Android con Flutter</h2>
+                            <p>¡Conviértete en desarrollador/a de apps móviles con Flutter y domina el desarrollo multiplataforma!</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="./img/cursos/docencia-formación.jpg" alt="Curso de Docencia de la Formación Profesional para el Empleo" data-tab="tab2">
+                        <div>
+                            <h2>Curso de Docencia de la Formación Profesional para el Empleo </h2>
+                            <p>¿Te gustaría formarte para ser docente en el ámbito de la formación profesional para el empleo?</p>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <img src="./img/cursos/inteligencia-artificial.jpg" alt="Curso de Especialista en Inteligencia Artificial" data-tab="tab3">
+                        <div>
+                            <h2>Curso de Especialista en Inteligencia Artificial </h2>
+                            <p>¡Conviértete en Especialista en Inteligencia Artificial y domina la tecnología del futuro!</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="./img/cursos/servicios-administrativos.jpg" alt="Curso de Operaciones Auxiliares de Servicios Administrativos" data-tab="tab4">
+                        <div>
+                            <h2>Curso de Operaciones Auxiliares de Servicios Administrativos y Generales</h2>
+                            <p>¡Fórmate en Operaciones Auxiliares de Servicios Administrativos y mejora tu futuro profesional!.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="./img/cursos/grabación-datos.jpg" alt="Curso de Operaciones de Grabación y Tratamiento de Datos y Documentos" data-tab="tab5">
+                        <div>
+                            <h2>Curso de Operaciones de Grabación y Tratamiento de Datos y Documentos </h2>
+                            <p>¿Te gustaría desarrollar una habilidad clave en el mundo administrativo?</p>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <img src="./img/cursos/programacion-videojuegos.jpg" alt="Curso de Programación para videojuegos en Unity 3D" data-tab="tab6">
+                        <div>
+                            <h2>Curso de Programación para videojuegos en Unity 3D </h2>
+                            <p>¿Te apasiona el mundo de los videojuegos?</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="./img/cursos/desarrollo-aplicaciones-web.jpg" alt="Curso Desarrollo de aplicaciones con tecnología web" data-tab="tab7">
+                        <div>
+                            <h2>Curso Desarrollo de aplicaciones con tecnología web </h2>
+                            <p>¿Te gustaría dominar el desarrollo de aplicaciones web y destacar en uno de los sectores más dinámicos del mercado?</p>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <img src="./img/cursos/seguridad-informatica.jpg" alt="Curso Seguridad informática" data-tab="tab8">
+                        <div>
+                            <h2>Curso Seguridad informática</h2>
+                            <p>¿Te apasiona la tecnología y quieres garantizar la seguridad en un mundo cada vez más digital?</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Contenedor de todas las Tabs (pestañas), Muestra el contenido del curso seleccionado -->
+            <section class="container-main tab color-fondo">
+                <div id="info-cursos" class="contenedor tabs-container tabs-js">
+
+                    <!-- Botón vuelve a mostrar todos los cursos -->
+                    <button><a href="#cursos">MOSTRAR TODOS LOS CURSOS</a></button>
+
+                    <!-- Tab 1 (Pestaña) - Contenido del curso Destacado -->
+                    <div id="tab1" class="tab-content-js curso-destacado active">
+                        <div class="curso-header">
+                            <img src="./img/cursos/desarrollo-aplicaciones-flutter.jpg" alt="Curso de Desarrollo de Aplicaciones Móviles">
+                            <h2>Curso de Desarrollo de Aplicaciones Móviles para iOS y Android con Flutter</h2>
+                        </div>
+
+                        <div class="curso-info">
+                            <div class="info-item">
+                                <span>👥</span>
+                                <strong>Dirigido a: </strong>Personas desempleadas
+                            </div>
+                            <div class="info-item">
+                                <span>📄</span>
+                                <strong>Requisitos: </strong>CP nivel 3 o bachillerato
+                            </div>
+                            <div class="info-item">
+                                <span>🎓</span>
+                                <strong>Nivel: </strong>Nivel 3
+                            </div>
+                            <div class="info-item">
+                                <span>💻</span>
+                                <strong>Modalidad: </strong>Mixta Online y Presencial
+                            </div>
+                            <div class="info-item">
+                                <span>⏱️</span>
+                                <strong>Duración: </strong>240 horas
+                            </div>
+                            <div class="info-item">
+                                <span>📅</span>
+                                <strong>Inicio: </strong>Próximamente
+                            </div>
+                            <div class="info-item">
+                                <span>📍</span>
+                                <strong>Provincia: </strong>Málaga
+                            </div>
+                        </div>
+
+                        <div class="curso-descripcion">
+                            <p>
+                                ¡Conviértete en desarrollador/a de apps móviles con Flutter y domina el desarrollo multiplataforma!<br>
+                                Si te apasiona la tecnología y quieres una carrera con futuro en el desarrollo de aplicaciones, el Curso de Desarrollo de Aplicaciones Móviles para iOS y Android con Flutter es tu oportunidad para aprender una de las tecnologías más demandadas del mercado. Con esta formación, adquirirás los conocimientos necesarios para diseñar, programar y optimizar aplicaciones móviles de alto rendimiento, utilizando Flutter y Dart.
+                            </p>
+                        </div>
+
+                        <div class="curso-contenido">
+                            <h3>Contenido</h3>
+                            <div>
+                                <ul>
+                                    <li><strong>Módulo 1: Arquitectura de aplicaciones móviles con Flutter (80 horas)</strong>
+                                        <p>Diseña y organiza la estructura base de proyectos Flutter para optimizar el rendimiento y la escalabilidad.</p>
+                                    </li>
+
+                                    <li><strong>Módulo 2: Desarrollo de aplicaciones móviles con Flutter (160 horas)</strong>
+                                        <p>Implementa funcionalidades avanzadas, maneja bases de datos, y utiliza widgets para crear aplicaciones 2D y 3D.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="curso-metodologia">
+                            <h3>Metodología</h3>
+                            <p>
+                                Este curso combina teoría y práctica, permitiéndote trabajar en proyectos reales mientras aplicas los conocimientos adquiridos. En la modalidad de teleformación, tendrás acceso a una plataforma virtual con recursos interactivos y soporte continuo.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- Tab 2 (Pestaña) - Contenido del curso Destacado -->
+                    <div id="tab2" class="tab-content-js curso-destacado">
+                        <div class="curso-header">
+                            <img src="./img/cursos/docencia-formación.jpg" alt="Curso de Docencia de la Formación Profesional para el Empleo">
+                            <h2>Curso de Docencia de la Formación Profesional para el Empleo</h2>
+                        </div>
+
+                        <div class="curso-info">
+                            <div class="info-item">
+                                <span>👥</span>
+                                <strong>Dirigido a: </strong>Personas desempleadas
+                            </div>
+                            <div class="info-item">
+                                <span>📄</span>
+                                <strong>Requisitos: </strong>CP nivel 3 o bachillerato
+                            </div>
+                            <div class="info-item">
+                                <span>🎓</span>
+                                <strong>Nivel: </strong>Nivel 3
+                            </div>
+                            <div class="info-item">
+                                <span>💻</span>
+                                <strong>Modalidad: </strong>Presencial
+                            </div>
+                            <div class="info-item">
+                                <span>⏱️</span>
+                                <strong>Duración: </strong>340 horas
+                            </div>
+                            <div class="info-item">
+                                <span>📅</span>
+                                <strong>Inicio: </strong>Próximamente
+                            </div>
+                            <div class="info-item">
+                                <span>📍</span>
+                                <strong>Provincia: </strong>Málaga
+                            </div>
+                        </div>
+
+                        <div class="curso-descripcion">
+                            <h3>Descripción</h3>
+                            <p>
+                                ¿Te gustaría formarte para ser docente en el ámbito de la formación profesional para el empleo?<br>
+                                Con este curso, adquirirás las competencias necesarias para programar, 
+                                impartir, tutorizar y evaluar acciones formativas, así como para diseñar materiales y recursos didácticos adaptados a las necesidades de los destinatarios y la realidad laboral.
+                            </p>
+                        </div>
+                        <div class="curso-contenido">
+                            <h3>Contenido</h3>
+                            <div>
+                                <ul>
+                                    <li><strong>MF1442_3: Programación didáctica de acciones formativas para el empleo (60 horas)</strong>
+                                        <p>Aprende a programar y estructurar las acciones formativas para que sean eficaces y adaptadas a los perfiles de los estudiantes.</p>
+                                    </li>
+
+                                    <li><strong>MF1443_3: Selección, elaboración, adaptación y utilización de materiales didácticos (90 horas)</strong>
+                                        <p>Conoce las técnicas para crear y seleccionar materiales didácticos apropiados para la formación en el empleo.</p>
+                                    </li>
+
+                                    <li><strong>MF1444_3: Impartición y tutorización de acciones formativas para el empleo (100 horas)</strong>                                       
+                                        <p>UF1645: Impartición de acciones formativas (70 horas).</p>
+                                        <p>UF1646: Tutorización de acciones formativas (30 horas).</p>
+                                    </li>
+
+                                    <li><strong>MF1445_3: Evaluación del proceso de enseñanza-aprendizaje (60 horas)</strong>
+                                        <p>Evalúa la efectividad de los procesos de formación y ajusta las estrategias pedagógicas.</p>
+                                    </li>
+
+                                    <li><strong>MF1446_3: Orientación laboral y promoción de la calidad en la formación (30 horas)</strong>
+                                        <p>Aprende a orientar a los estudiantes sobre sus itinerarios profesionales y promueve la calidad de la formación.</p>
+                                    </li>
+
+                                    <li><strong>MP0353: Módulo de prácticas profesionales no laborales (40 horas)</strong>
+                                        <p>Aplica lo aprendido en un entorno profesional real para reforzar tu formación.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="curso-metodologia">
+                            <h3>Metodología</h3>
+                            <p>
+                                El curso combina teoría y práctica, con una fuerte orientación a la aplicación real de los conocimientos. 
+                                Además, el módulo de prácticas profesionales no laborales te permitirá experimentar directamente en el ámbito educativo, lo que te preparará para ejercer en el campo de la formación profesional para el empleo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Tab 3 (Pestaña) - Contenido del curso Destacado -->
+                    <div id="tab3" class="tab-content-js curso-destacado">
+                        <div class="curso-header">
+                            <img src="./img/cursos/inteligencia-artificial.jpg" alt="Curso de Especialista en Inteligencia Artificial">
+                            <h2>Curso de Especialista en Inteligencia Artificial</h2>
+                        </div>
+
+                        <div class="curso-info">
+                            <div class="info-item">
+                                <span>👥</span>
+                                <strong>Dirigido a: </strong>Personas desempleadas
+                            </div>
+                            <div class="info-item">
+                                <span>📄</span>
+                                <strong>Requisitos: </strong>CP nivel 3 o bachillerato
+                            </div>
+                            <div class="info-item">
+                                <span>🎓</span>
+                                <strong>Nivel: </strong>Nivel 3
+                            </div>
+                            <div class="info-item">
+                                <span>💻</span>
+                                <strong>Modalidad: </strong>Presencial
+                            </div>
+                            <div class="info-item">
+                                <span>⏱️</span>
+                                <strong>Duración: </strong>230 horas
+                            </div>
+                            <div class="info-item">
+                                <span>📅</span>
+                                <strong>Inicio: </strong>Próximamente
+                            </div>
+                            <div class="info-item">
+                                <span>📍</span>
+                                <strong>Provincia: </strong>Málaga
+                            </div>
+                        </div>
+
+                        <div class="curso-descripcion">
+                            <h3>Descripción</h3>
+                            <p>
+                                ¡Conviértete en Especialista en Inteligencia Artificial y domina la tecnología del futuro!<br>
+                                Si quieres impulsar tu carrera en el sector tecnológico y desarrollar habilidades clave en Machine Learning, Redes Neuronales y AutoML, este curso es para ti. 
+                                Con una formación completa y enfocada en la aplicación real, te prepararás para enfrentar los retos de la IA con un enfoque práctico y responsable.
+                            </p>
+                        </div>
+                        <div class="curso-contenido">
+                            <h3>Contenido</h3>
+                            <div>
+                                <ul>
+                                    <li><strong>Módulo 1:</strong>
+                                        <p>Fundamentos de Inteligencia Artificial (42 h).</p>
+                                    </li>
+
+                                    <li><strong>Módulo 2:</strong>
+                                        <p>Exploración del conjunto de datos (5 h).</p>
+                                    </li>
+
+                                    <li><strong>Módulo 3:</strong>                                       
+                                        <p>Algoritmos de Machine Learning (40 h).</p>
+                                    </li>
+
+                                    <li><strong>Módulo 4:</strong>
+                                        <p>Redes Neuronales (50 h).</p>
+                                    </li>
+
+                                    <li><strong>Módulo 5:</strong>
+                                        <p>Visualización de resultados (3 h).</p>
+                                    </li>
+
+                                    <li><strong>Módulo 6:</strong>
+                                        <p>Bases de datos en IA (5 h).</p>
+                                    </li>
+                                    <li><strong>Módulo 7:</strong>
+                                        <p>Auto Machine Learning (10 h).</p>
+                                    </li>
+                                    <li><strong>Módulo 8:</strong>
+                                        <p>Responsible AI (5 h).</p>
+                                    </li>
+                                    <li><strong>Módulo 9:</strong>
+                                        <p>Caso práctico en IA (60 h).</p>
+                                    </li>
+                                    <li><strong>Módulo 10:</strong>
+                                        <p>Píldoras formativas (10 h).</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="curso-metodologia">
+                            <h3>Metodología</h3>
+                            <p>
+                                El curso combina metodología teórica y práctica para garantizar un aprendizaje efectivo. Se emplearán clases magistrales, estudios de casos, y proyectos reales para aplicar los conocimientos adquiridos. Además, contarás con simulaciones, tutorías personalizadas y acceso a herramientas avanzadas de Inteligencia Artificial. 
+                                La metodología está diseñada para fomentar la resolución de problemas, el pensamiento crítico y la innovación en IA.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Tab 4 (Pestaña) - Contenido del curso Destacado -->
+                    <div id="tab4" class="tab-content-js curso-destacado">
+                        <div class="curso-header">
+                            <img src="./img/cursos/servicios-administrativos.jpg" alt="Curso de Operaciones Auxiliares de Servicios Administrativos">
+                            <h2>Curso de Operaciones Auxiliares de Servicios Administrativos y Generales</h2>
+                        </div>
+
+                        <div class="curso-info">
+                            <div class="info-item">
+                                <span>👥</span>
+                                <strong>Dirigido a: </strong>Personas desempleadas
+                            </div>
+                            <div class="info-item">
+                                <span>📄</span>
+                                <strong>Requisitos: </strong>CP nivel 1 o formación profesional de grado medio
+                            </div>
+                            <div class="info-item">
+                                <span>🎓</span>
+                                <strong>Nivel: </strong>Nivel 1
+                            </div>
+                            <div class="info-item">
+                                <span>💻</span>
+                                <strong>Modalidad: </strong>Presencial
+                            </div>
+                            <div class="info-item">
+                                <span>⏱️</span>
+                                <strong>Duración: </strong>390 horas
+                            </div>
+                            <div class="info-item">
+                                <span>📅</span>
+                                <strong>Inicio: </strong>Próximamente
+                            </div>
+                            <div class="info-item">
+                                <span>📍</span>
+                                <strong>Provincia: </strong>Málaga
+                            </div>
+                        </div>
+
+                        <div class="curso-descripcion">
+                            <h3>Descripción</h3>
+                            <p>
+                                ¡Fórmate en Operaciones Auxiliares de Servicios Administrativos y mejora tu futuro profesional!<br>
+                                Si quieres desarrollar tu carrera en el ámbito administrativo y aprender las habilidades esenciales para trabajar en oficinas, gestorías o cualquier sector donde la organización y la gestión documental sean clave, este curso es para ti. 
+                                Con una formación completa y práctica, adquirirás los conocimientos necesarios para realizar tareas administrativas básicas, mejorar la comunicación en el entorno laboral y gestionar archivos y documentación de manera eficiente.
+                            </p>
+                        </div>
+                        <div class="curso-contenido">
+                            <h3>Contenido</h3>
+                            <div>
+                                <ul>
+                                    <li><strong>MF0969_1: Técnicas administrativas básicas de oficina. (150 horas)</strong>
+                                        <p>UF0517: Organización empresarial y de recursos humanos. (30 horas).</p>
+                                        <P>UF0518: Gestión auxiliar de la correspondencia y paquetería en la empresa.(30 horas)</P>
+                                        <P>UF0519: Gestión auxiliar de documentación económico-administrativa y comercial. (90 horas)</P>
+                                    </li>
+
+                                    <li><strong>MF0970_1: Operaciones básicas de comunicación. (120 horas)</strong>
+                                        <p>UF0520: Comunicación en las relaciones profesionales. (50 horas).</p>
+                                        <P>UF0521: Comunicación oral y escrita en la empresa. (70 horas)</P>
+                                    </li>
+
+                                    <li><strong>MF0971_1: (Transversal) Reproducción y archivo. (120 horas)</strong>                                       
+                                        <p>UF0513: Gestión auxiliar de archivo en soporte convencional o informático. (60 horas).</p>
+                                        <p>UF0514: Gestión auxiliar de reproducción en soporte convencional o informático. (60 horas) MP0112.</p>
+                                    </li>
+                                    <li><strong>MP0112</strong>
+                                        <P>Módulo de prácticas profesionales no laborales de operaciones auxiliares de servicios administrativos y generales. (40 horas)</P>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="curso-metodologia">
+                            <h3>Metodología</h3>
+                            <p>
+                                Este curso se imparte de forma presencial, brindándote la oportunidad de trabajar cara a cara con un equipo docente especializado y compartir experiencias con otros estudiantes. 
+                                Las clases están diseñadas para combinar teoría y práctica, creando un entorno participativo que fomenta el aprendizaje colaborativo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Tab 5 (Pestaña) - Contenido del curso Destacado -->
+                    <div id="tab5" class="tab-content-js curso-destacado">
+                        <div class="curso-header">
+                            <img src="./img/cursos/grabación-datos.jpg" alt="Curso de Operaciones de Grabación y Tratamiento de Datos y Documentos">
+                            <h2>Curso de Operaciones de Grabación y Tratamiento de Datos y Documentos</h2>
+                        </div>
+
+                        <div class="curso-info">
+                            <div class="info-item">
+                                <span>👥</span>
+                                <strong>Dirigido a: </strong>Personas desempleadas
+                            </div>
+                            <div class="info-item">
+                                <span>📄</span>
+                                <strong>Requisitos: </strong>CP nivel 1 o formación profesional de grado medio
+                            </div>
+                            <div class="info-item">
+                                <span>🎓</span>
+                                <strong>Nivel: </strong>Nivel 1
+                            </div>
+                            <div class="info-item">
+                                <span>💻</span>
+                                <strong>Modalidad: </strong>Presencial
+                            </div>
+                            <div class="info-item">
+                                <span>⏱️</span>
+                                <strong>Duración: </strong>440 horas
+                            </div>
+                            <div class="info-item">
+                                <span>📅</span>
+                                <strong>Inicio: </strong>Próximamente
+                            </div>
+                            <div class="info-item">
+                                <span>📍</span>
+                                <strong>Provincia: </strong>Málaga
+                            </div>
+                        </div>
+
+                        <div class="curso-descripcion">
+                            <h3>Descripción</h3>
+                            <p>
+                                ¿Te gustaría desarrollar una habilidad clave en el mundo administrativo?<br>
+                                Con este curso 100% subvencionado, adquirirás los conocimientos esenciales para convertirte en un experto en digitalización, gestión y archivo de documentos en entornos profesionales.
+                                Aprenderás a manejar herramientas informáticas avanzadas, optimizar flujos de trabajo y garantizar la seguridad, precisión y calidad en el tratamiento de datos. 
+                                Prepárate para destacar en un sector con una alta demanda laboral y mejorar tus oportunidades en el ámbito administrativo.
+                            </p>
+                        </div>
+                        <div class="curso-contenido">
+                            <h3>Contenido</h3>
+                            <div>
+                                <ul>
+                                    <li><strong>MF0973_1: Grabación de datos (90 horas)</strong>
+                                        <p>Competencias transversales para introducir información en sistemas informáticos.</p>
+                                    </li>
+
+                                    <li><strong>MF0974_1: Tratamiento de datos, textos y documentación (150 horas)</strong>
+                                        <p>UF0510: Procesadores de textos y presentaciones básicas (60 horas).</p>
+                                        <P>UF0511: Tratamiento de datos y hojas de cálculo (50 horas).</P>
+                                        <P>UF0512: Transmisión de información por medios convencionales e informáticos (40 horas).</P>
+                                    </li>
+
+                                    <li><strong>MF0971_1: Reproducción y archivo (120 horas)</strong>
+                                        <p>UF0513: Gestión de archivos en soporte físico o digital (60 horas).</p>
+                                        <P>UF0514: Reproducción de documentos en distintos formatos (60 horas).</P>
+                                    </li>
+
+                                    <li><strong>MP0110: Módulo de prácticas no laborales (80 horas)</strong>
+                                        <p>Aplicación de conocimientos en entornos reales de trabajo.</p>
+                                    </li>
+
+                                    
+
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="curso-metodologia">
+                            <h3>Metodología</h3>
+                            <p>
+                                El curso combina teoría y práctica, con actividades que simulan situaciones reales del entorno administrativo. 
+                                Además, el módulo de prácticas no laborales te permitirá aplicar lo aprendido en un contexto profesional, garantizando una formación completa y adaptada a las necesidades del mercado laboral.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Tab 6 (Pestaña) - Contenido del curso Destacado -->
+                    <div id="tab6" class="tab-content-js curso-destacado">
+                        <div class="curso-header">
+                            <img src="./img/cursos/programacion-videojuegos.jpg" alt="Curso de Programación para videojuegos en Unity 3D">
+                            <h2>Curso de Programación para videojuegos en Unity 3D</h2>
+                        </div>
+
+                        <div class="curso-info">
+                            <div class="info-item">
+                                <span>👥</span>
+                                <strong>Dirigido a: </strong>Personas desempleadas
+                            </div>
+                            <div class="info-item">
+                                <span>📄</span>
+                                <strong>Requisitos: </strong>CP nivel 3 o bachillerato
+                            </div>
+                            <div class="info-item">
+                                <span>🎓</span>
+                                <strong>Nivel: </strong>Nivel 3
+                            </div>
+                            <div class="info-item">
+                                <span>💻</span>
+                                <strong>Modalidad: </strong>Presencial
+                            </div>
+                            <div class="info-item">
+                                <span>⏱️</span>
+                                <strong>Duración: </strong>300 horas
+                            </div>
+                            <div class="info-item">
+                                <span>📅</span>
+                                <strong>Inicio: </strong>Próximamente
+                            </div>
+                            <div class="info-item">
+                                <span>📍</span>
+                                <strong>Provincia: </strong>Málaga
+                            </div>
+                        </div>
+
+                        <div class="curso-descripcion">
+                            <h3>Descripción</h3>
+                            <p>
+                                ¿Te apasiona el mundo de los videojuegos? Con el curso de Programación para Videojuegos en Unity, 
+                                aprenderás a desarrollar videojuegos completos aplicando algoritmos de programación con uno de los motores más utilizados en la industria. Dominarás técnicas para crear videojuegos 2D y 3D mientras adquieres habilidades prácticas que te prepararán para una carrera profesional en este apasionante sector.
+                            </p>
+                        </div>
+                        <div class="curso-contenido">
+                            <h3>Contenido</h3>
+                            <div>
+                                <ul>
+                                    <li><strong>Módulo 1</strong>
+                                        <p>Programación con Unity.</p>
+                                    </li>
+                                    <li><strong>Módulo 2</strong>
+                                        <p>Videojuegos 2D en Unity.</p>
+                                    </li>
+                                    <li><strong>Módulo 3</strong>
+                                        <p>Videojuegos 3D en Unity.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="curso-metodologia">
+                            <h3>Metodología</h3>
+                            <p>
+                                este curso combina teoría y práctica, enfocándose en proyectos reales para garantizar que domines cada aspecto del desarrollo de videojuegos. 
+                                Trabajarás con Unity para crear tus propios proyectos en 2D y 3D, aprendiendo a resolver problemas técnicos y creativos de forma autónoma.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Tab 7 (Pestaña) - Contenido del curso Destacado -->
+                    <div id="tab7" class="tab-content-js curso-destacado">
+                        <div class="curso-header">
+                            <img src="./img/cursos/desarrollo-aplicaciones-web.jpg" alt="Curso Desarrollo de aplicaciones con tecnología web">
+                            <h2>Curso Desarrollo de aplicaciones con tecnología web</h2>
+                        </div>
+
+                        <div class="curso-info">
+                            <div class="info-item">
+                                <span>👥</span>
+                                <strong>Dirigido a: </strong>Personas desempleadas
+                            </div>
+                            <div class="info-item">
+                                <span>📄</span>
+                                <strong>Requisitos: </strong>CP nivel 3 o bachillerato
+                            </div>
+                            <div class="info-item">
+                                <span>🎓</span>
+                                <strong>Nivel: </strong>Nivel 3
+                            </div>
+                            <div class="info-item">
+                                <span>💻</span>
+                                <strong>Modalidad: </strong>Presencial
+                            </div>
+                            <div class="info-item">
+                                <span>⏱️</span>
+                                <strong>Duración: </strong>510 horas
+                            </div>
+                            <div class="info-item">
+                                <span>📅</span>
+                                <strong>Inicio: </strong>Próximamente
+                            </div>
+                            <div class="info-item">
+                                <span>📍</span>
+                                <strong>Provincia: </strong>Málaga
+                            </div>
+                        </div>
+
+                        <div class="curso-descripcion">
+                            <h3>Descripción</h3>
+                            <p>
+                                ¿Te gustaría dominar el desarrollo de aplicaciones web y destacar en uno de los sectores más dinámicos del mercado?<br>
+                                Con este curso, aprenderás a crear, implementar y documentar aplicaciones modernas y eficientes para entornos internet, intranet y extranet, utilizando las tecnologías más avanzadas del entorno cliente y servidor.
+                            </p>
+                        </div>
+                        <div class="curso-contenido">
+                            <h3>Contenido</h3>
+                            <div>
+                                <ul>
+                                    <li><strong>UC0491_3</strong>
+                                        <p>Desarrollar elementos software en el entorno cliente.</p>
+                                    </li>
+
+                                    <li><strong>UC0492_3</strong>
+                                        <p>Desarrollar elementos software en el entorno servidor.</p>
+                                    </li>
+
+                                    <li><strong>UC0493_3</strong>                                       
+                                        <p>Implementar, verificar y documentar aplicaciones web en entornos internet, intranet y extranet.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="curso-metodologia">
+                            <h3>Metodología</h3>
+                            <p>
+                                Este curso combina teoría y práctica para garantizar que domines el desarrollo de aplicaciones web en todas sus etapas. 
+                                Realizarás simulaciones reales y trabajarás con proyectos prácticos para aplicar conceptos clave. Además, el módulo de prácticas en entornos reales te brindará experiencia directa en el sector.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Tab 8 (Pestaña) - Contenido del curso Destacado -->
+                    <div id="tab8" class="tab-content-js curso-destacado">
+                        <div class="curso-header">
+                            <img src="./img/cursos/seguridad-informatica.jpg" alt="Curso Seguridad informática">
+                            <h2>Curso Seguridad informática</h2>
+                        </div>
+
+                        <div class="curso-info">
+                            <div class="info-item">
+                                <span>👥</span>
+                                <strong>Dirigido a: </strong>Personas desempleadas
+                            </div>
+                            <div class="info-item">
+                                <span>📄</span>
+                                <strong>Requisitos: </strong>CP nivel 3 o bachillerato
+                            </div>
+                            <div class="info-item">
+                                <span>🎓</span>
+                                <strong>Nivel: </strong>Nivel 3
+                            </div>
+                            <div class="info-item">
+                                <span>💻</span>
+                                <strong>Modalidad: </strong>Presencial
+                            </div>
+                            <div class="info-item">
+                                <span>⏱️</span>
+                                <strong>Duración: </strong>420 horas
+                            </div>
+                            <div class="info-item">
+                                <span>📅</span>
+                                <strong>Inicio: </strong>Próximamente
+                            </div>
+                            <div class="info-item">
+                                <span>📍</span>
+                                <strong>Provincia: </strong>Málaga
+                            </div>
+                        </div>
+
+                        <div class="curso-descripcion">
+                            <h3>Descripción</h3>
+                            <p>
+                                ¿Te apasiona la tecnología y quieres garantizar la seguridad en un mundo cada vez más digital?<br>
+                                Con nuestro curso de Seguridad Informática, aprenderás a proteger equipos, redes y sistemas de comunicación frente a amenazas y ataques. Organizado por la Junta de Andalucía, este curso presencial te ofrece una formación técnica y práctica de alto nivel, ideal para acceder a uno de los sectores más demandados en la actualidad.
+                            </p>
+                        </div>
+                        <div class="curso-contenido">
+                            <h3>Contenido</h3>
+                            <div>
+                                <ul>
+                                    <li><strong>UC0486_3</strong>
+                                        <p>Asegurar equipos informáticos.</p>
+                                    </li>
+                                    <li><strong>UC0487_3</strong>
+                                        <p>Auditar redes de comunicación y sistemas informáticos.</p>
+                                    </li>
+                                    <li><strong>UC0488_3</strong>
+                                        <p>Detectar y responder ante incidentes de seguridad.</p>
+                                    </li>
+                                    <li><strong>UC0489_3</strong>
+                                        <p>Diseñar e implementar sistemas seguros de acceso y transmisión de datos.</p>
+                                    </li>
+                                    <li><strong>UC0490_3</strong>
+                                        <p>Gestionar servicios en el sistema informático.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="curso-metodologia">
+                            <h3>Metodología</h3>
+                            <p>
+                                La metodología de este curso está enfocada en el aprendizaje práctico, asegurando que adquieras las competencias clave en seguridad informática. Durante las sesiones, participarás en actividades como la configuración y aseguramiento de equipos informáticos, la auditoría de redes y sistemas, y la detección y gestión de incidentes de seguridad en entornos simulados.
+                                El curso incluye simulaciones prácticas y análisis de casos reales, preparándote para enfrentar desafíos críticos en la protección de datos y sistemas. Además, el módulo de prácticas profesionales no laborales te permitirá aplicar lo aprendido en un entorno real, ganando experiencia directa en el ámbito de la ciberseguridad. La evaluación se basará en tu desempeño en actividades prácticas, proyectos y una prueba final, asegurando que estés completamente preparado para ejercer como profesional en este sector estratégico.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+
+            <!-- Sección de Contacto -->
+            <section class="container-main contacto color-fondo">
+
+                <!-- Tarjeta email -->
+                <div class="email">
+                    <div class="email_container container">
+                        <h2 class="email_title">¡Aprovecha esta oportunidad!</h2>
+                        <button class="email_submit button"><a href="#contacto">Solicita tu plaza</a></button>
+                    </div>
+                </div>
+            
+                <div id="contacto" class="contenedor contact-container">
+                    <div>
+                        <h2></h2>
+                        <h3></h3>
+                        <form action="" method="">
+                            <input type="text" placeholder="Nombre" name="nombre" required>
+                            <input type="tel" placeholder="Teléfono" name="telefono" required>
+                            <input type="email" placeholder="Email" name="email" required>
+                            <textarea placeholder="Mensaje" name="mensaje" rows="10" required></textarea>
+                            <input type="submit" value="Quiero Más Información">
+                        </form>
+                    </div>
+                    
+                    <div id="info">
+                        <h2>Prepara tu futuro con nuestros cursos de Formación Profesional para el Empleo (FPE)</h2>
+                        <h3>Mejora tu empleabilidad y progresa profesionalmente con nuestros cursos.</h3>
+                        <p>Cursos gratuitos, subvencionados por diferentes organismos que buscan preparar los profesionales que el mercado de trabajo está solicitando. 
+                            Mantente al tanto de toda la oferta a lo largo del año, siguiendo nuestra redes sociales.</p>
+                
+                    </div>
+                </div>
+            </section>           
+        </main>
+
+        <footer>
+            <div class="contenedor">
+                <div class="info-footer">
+                    <div class="contact-footer">
+                        <!-- <p>📞 +123 456 789</p> -->
+                        <p><a href="tel:+123456789"><i class="fa-solid fa-phone"></i> +123456789</a></p>
+                        <!-- <p>✉ contacto@grupoalce.com</p> -->
+                        <p><a href="mailto:ejemplo@email.com"><i class="fa-solid fa-envelope"></i> ejemplo@email.com</a></p>
+                        <p><i class="fa-solid fa-map-marker-alt"></i> Calle 123, Ciudad</p>
+                    </div>
+                    <div class="social-media">
+                        <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <p><a href="#">Política de Privacidad</a> &nbsp|&nbsp © 2025 <a href="#">Grupo ALCE</a></p>
+                
+            </div>
+        </footer>
+
+        <script src="./js/scripts.js"></script>
+    </div>
+</body>
+</html>

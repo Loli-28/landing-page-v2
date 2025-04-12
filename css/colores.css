@@ -1,0 +1,49 @@
+
+
+body {
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #CFD0F0, #E2E3F6);
+    color: #2e3192;
+}
+
+.contact-info a {
+    color: #2e3192;
+}
+
+.contact-info a:hover {
+    color: #5f56a8;
+}
+
+.fa-phone {
+    color: #932f32;
+}
+
+nav ul li a {
+    color: #2e3192;
+}
+
+nav ul li a:hover {
+    color: #5f56a8;
+}
+
+form {
+    background-color: #f9f9f9;
+}
+
+form input[type="submit"] {
+    background: #2e3192;
+    color: white;
+}
+
+form input[type="submit"]:hover {
+    background: #5f56a8;
+}
+
+footer {
+     background-color: #232056;
+     color: white;
+}
