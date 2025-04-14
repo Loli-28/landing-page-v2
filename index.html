@@ -779,12 +779,16 @@
                     <div>
                         <h2></h2>
                         <h3></h3>
-                        <form action="" method="">
+                        <form id="formularioContacto" action="mail-prueba.php" method="post">
                             <input type="text" placeholder="Nombre" name="nombre" required>
                             <input type="tel" placeholder="Teléfono" name="telefono" required>
                             <input type="email" placeholder="Email" name="email" required>
-                            <textarea placeholder="Mensaje" name="mensaje" rows="10" required></textarea>
-                            <input type="submit" value="Quiero Más Información">
+                            <textarea placeholder="Mensaje" name="mensaje" rows="10"></textarea>
+
+                            <input type="checkbox" name="politica" id="politica" required checked> 
+                            <label for="">Acepto la <a href="./politica-privacidad.html" target="_blank">política de Privacidad</a></label>
+
+                            <input class="boton-submit" type="submit" value="Quiero Más Información" id="enviar">
                         </form>
                     </div>
                     
