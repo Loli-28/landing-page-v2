@@ -7,55 +7,13 @@
 
 }
 body {
+    font-size: 16px;
     background: #f4f4f4;
     color: #333;
 }
 
 a {
     text-decoration: none;
-}
-
-
-/* -------------- */
-/* --- HEADER --- */
-/* -------------- */
-
-header {
-    /* background: linear-gradient(90deg, #ccccf0, #E0E0F6); */
-    background: linear-gradient(90deg, #CFD0F0, #E2E3F6);
-    color: #2e3192;
-    padding: 20px;
-    text-align: center;
-    font-size: 1.2em;
-}
-
-/* Contenedor info-contacto y redes */
-.top-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid white;
-}
-.contact-info span {
-    margin-right: 15px; 
-}
-
-.contact-info i {
-    font-size: 17px;
-}
-
-.contact-info a {
-    color: #2e3192;
-}
-
-.contact-info a:hover {
-    color: #5f56a8;
-}
-
-.fa-phone {
-    color: #932f32;
 }
 
 
@@ -89,6 +47,49 @@ a:hover .fa-facebook {
     color: #0d5bd8; /* Azul más oscuro al pasar el mouse */
 }
 
+
+/* -------------- */
+/* --- HEADER --- */
+/* -------------- */
+
+header {
+    background: linear-gradient(90deg, #CFD0F0, #E2E3F6);
+    color: #2e3192;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Contenedor info-contacto y redes */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid white;
+}
+.contact-info span {
+    margin-right: 15px; 
+}
+
+/* .contact-info i {
+    font-size: 17px;
+} */
+
+.contact-info a {
+    color: #2e3192;
+}
+
+.contact-info a:hover {
+    color: #5f56a8;
+}
+
+.fa-phone {
+    color: #932f32;
+}
+
+
  /* Logo */
 .logo {
     width: max-content;
@@ -110,6 +111,7 @@ nav ul {
 
 nav ul li {
     margin: 0 15px;
+    padding: 5px 10px;
 }
 
 nav ul li a {
@@ -117,6 +119,7 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
+    font-size: 1.3rem;
 }
 
 nav ul li a:hover {
@@ -128,10 +131,6 @@ nav ul li a:hover {
 /* ------------ */
 
 /* hero */
-
-/* .hero img {
-    width: 100%;
-} */
 
 .hero {
     text-align: center;
@@ -343,6 +342,7 @@ label {
 
 label a {
     color: #2e3192;
+    font-size: 1rem;
 }
 
 
@@ -424,6 +424,7 @@ p {
     margin-bottom: 1rem;
 }
 
+
 #info h2 {
     color: #64932f;
     /* color: #2f935e; */
@@ -449,7 +450,7 @@ p {
 
 .course-container h2 {
     color: #932f32;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 10px;
 }
 
@@ -457,9 +458,6 @@ p {
     color: #932f32;
 }
 
-.hero h2 {
-    color: #64932f;
-}
 
 /* Botones */
 button {
@@ -542,10 +540,21 @@ button {
         margin-right: 1rem;
     }
 
-    .hero h3{
+    .hero h3 {
         max-width: max-content;
         font-size: 1.3rem;
         margin-left: 1rem;
         margin-right: 1rem;
     }
+
+    .curso-titulo h3, .contact-container h3 {
+        font-size: 1.3rem;
+    }
+
+    .curso-titulo h2, .contact-container h2 {
+        font-size: 1.5rem;
+    }
+
+
+     
 }
